@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/src/pages/profile.jsx"
+  status = 200

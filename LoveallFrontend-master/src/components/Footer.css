@@ -1,0 +1,83 @@
+.footer {
+    position: relative;
+    background-color: #970f32;
+    padding: 80px 20px 0; /* Adjust the padding to match the design */
+    color: white;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  
+  .footer-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  
+  .footer-left {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left h2 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-left p {
+    max-width: 300px;
+  }
+  
+  .footer-links ul,
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-contact li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-links li:hover,
+  .footer-contact li:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    text-align: right;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .footer-right p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right {
+      text-align: center;
+    }
+  
+    .footer-left,
+    .footer-right {
+      margin-bottom: 20px;
+    }
+  }
+  

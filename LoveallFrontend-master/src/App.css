@@ -1,0 +1,92 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-gradient-to-b {
+  position: relative;
+}
+
+#wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-gradient-to-b::after {
+  content: none;
+}
+
+.bg-white {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gradient-to-b > div:last-child {
+  line-height: 0;
+}
+
+.bg-gradient-to-b > div:last-child svg {
+  display: block;
+}
+
+/* .category-section {
+  position: relative;
+  z-index: 2;
+} */
+
+@media (min-width: 1024px) {
+  /* .category-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+  } */
+
+  .category-section .container {
+    background: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bg-gradient-to-b {
+    min-height: calc(120vh - 0.25rem);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .bg-gradient-to-b {
+    min-height: calc(110vh - 0.25rem);
+  }
+}
+
+.no-scrollbar {
+  /* Hide scrollbar for all browsers */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
